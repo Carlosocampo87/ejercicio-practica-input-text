@@ -2,36 +2,129 @@
 <html>
 
 <head>
-
+  <meta charset="UTF-8">
+  </p>
+  <title>Elementos Compuestos</title>
 </head>
 
 <body>
 
-<form>
-<h1>Ejemplos de input </h1>
+  <form>
+    <h1>Ejemplos de input </h1>
+    <!--Entrada-->
+    <p>Entrada de texto</p>
+    <input type="text" id="input1" name="input1">
 
-<p>
-   <label for="from">ejemplo de input de texto</label>
-<br />
-   <input type="text"name="message" id="message">
-</p>  
-<p>
-  <label for="from">ejemplo de input de numeros</label>
-<br />
-  <input type="number"name="message" id="message">
-</p> 
-<p>
-  <label for="from">ejemplo de input de email </label>
-<br />
-  <input type="email"name="message" id="message">
-</p>   
-<p>
-  <label for="from">ejemplo de input de contraseña</label>
-<br />
-  <input type="password"name="message" id="message">
-</p> 
+    <hr>
+    <h2>Otras entradas de texto</h2>
+    <!--entrada/numeros-->
+    <label for="from">input de numeros</label>
+    <br />
+    <input type="number" name="message" id="message">
+
+    <br /><br />
+    <!--Entrada/email-->
+    <label for="from"> input de email </label>
+    <br />
+    <input type="email" name="message" id="message">
+    <!--Entrada/contraseña-->
+    <br /><br />
+    <label for="from">input de contraseña</label>
+    <br />
+    <input type="password" name="message" id="message">
+    <!--Entrada/telefono-->
+    <br /><br />
+    <label for="from">input de telefono</label>
+    <br />
+    <input type="tel" name="message" id="message">
+    <!--Entrada/URL-->
+    <br /><br />
+    <label for="from">input de URL</label>
+    <br />
+    <input type="url" name="message" id="message">
+
+    <hr>
+
+    <h2> Input de seleccion multiple</h2>
 
 
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Tacos con cebolla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cebolla">
+    <label for="topping2">Tacos con silantro</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Cebolla">
+    <label for="topping3">Tacos con tomate</label><br>
+
+
+    <hr>
+
+    <h2> Input de seleccion unica</h2>
+
+
+    <input type="radio" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Tacos con cebolla</label><br>
+    <input type="radio" id="topping2" name="topping1" value="Cebolla">
+    <label for="topping2">Tacos con silantro</label><br>
+    <input type="radio" id="topping3" name="topping1" value="Cebolla">
+    <label for="topping3">Tacos con tomate</label><br>
+
+    <hr>
+    <h2> Select</h2>
+    <label for="seleccion">El orden de un seleccion</label>
+    <select id="seleccion" name="seleccion">
+      <option value="suerado">suerado</option>
+      <option value="pastor">pastor</option>
+    </select>
+    <hr>
+    <h2> Select con input</h2>
+
+    <label for="refresco"> Elige tu refresco favorito</label>
+    <input list="refresco">
+    <datalist id="refresco">
+      <option value="coca-cola"></option>
+      <option value="manzana"></option>
+      <option value="Naranja"></option>
+    </datalist>
+
+
+    <hr>
+    <h2> Input de fecha</h2>
+
+    <input type="date" id="fecha" name="fecha"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+<input type="month" id="fecha5" name="fecha5"><br>
+
+<hr>
+<h2> Input de archivo</h2>
+<input type="file" id="archivo1" name="archivo1" multiple><br><br>
+<h2> Input de archivo</h2>
+<input type="color" id="color1" name="color1"><br><br>
+<h2> Input de rango</h2>
+<label for="vol">volumen (entre 0 y 50)</label><br>
+<input type="range" id="vol" name="vol" min="0" max="50"><br>
+
+
+<hr>
+<h2> Input de boton</h2>
+<input type="reset"><br>
+<input type="submit"><br>
+<input type="button" name="boton1" id="boton1" value="boton1" onclick="alert('Bienvenidos')"><br>
+
+
+<hr>
+<h2>Ejemplo de formulario</h2>
+<form action="" id="form1" method="post">
+<label for="Nombre">Nombre:</label><br>
+<input type="text" name="Nombre" id="Nombre"><br><br>
+<input type="submit" value="submit" onclick="alert('Bienvenidos')" >
+<input type="reset">
+
+</form>
+
+<label for="apellido">Apellido:</label><br>
+<input type="text" name="apellido" id="apellido">
 </body>
 
 </html>
